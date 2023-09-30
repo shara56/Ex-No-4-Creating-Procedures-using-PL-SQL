@@ -14,6 +14,7 @@ To create a procedure using PL/SQL.
 
 6.Display the employee table
 ## Program:
+```
 CREATE TABLE ep2(
        empid NUMBER,
        empname VARCHAR(10),
@@ -35,6 +36,7 @@ CREATE TABLE ep2(
        END LOOP;
        END;
        /
+```
 ## Output:
 ![image](https://github.com/shara56/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/113497104/e1d84a4a-c30d-4da7-858e-b2f69e307507)
 ## Result:
