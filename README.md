@@ -15,20 +15,14 @@ To create a procedure using PL/SQL.
 6.Display the employee table
 ## Program:
 ```
-CREATE TABLE ep2(
-       empid NUMBER,
-       empname VARCHAR(10),
-       dept VARCHAR(10),
-       salary NUMBER
-       );
-       CREATE OR REPLACE PROCEDURE emp_data AS
+  CREATE OR REPLACE PROCEDURE emp_data AS
        BEGIN
        INSERT INTO ep2(empid,empname,dept,salary)
-       values(1,'Shara','MD',10000000);
+       values(1,'Shaa','MD',10000000);
        INSERT INTO ep2(empid,empname,dept,salary)
-       values(2,'yuva','HR',500000);
+       values(2,'Yuva','HR',5000000);
        INSERT INTO ep2(empid,empname,dept,salary)
-       values(3,'sailesh','IT',200000);
+       values(3,'Har','Finance',200000);
        COMMIT;
        FOR emp_rec IN (SELECT * FROM ep2)LOOP
        DBMS_OUTPUT.PUT_LINE('EMPLOYEE ID:'||emp_rec.empid||',EMPLOYEE NAME:'|| emp_rec.empname||
@@ -38,6 +32,7 @@ CREATE TABLE ep2(
        /
 ```
 ## Output:
-![image](https://github.com/shara56/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/113497104/e1d84a4a-c30d-4da7-858e-b2f69e307507)
+![image](https://github.com/shara56/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/113497104/32966c8a-7137-49ef-8ce4-2dffe713df80)
+
 ## Result:
 Thus,the output has been successfully verified!
